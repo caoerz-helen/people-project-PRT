@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRT Live | Team</title>
+    <meta name="description" content="The team behind PRT Live — research, strategy, design, and implementation." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-light light-a" aria-hidden="true"></div>
+    <div class="bg-light light-b" aria-hidden="true"></div>
+    <div class="route-grid" aria-hidden="true"></div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="navbar container">
+        <a href="index.html" class="brand">
+          <span class="brand-dot"></span>
+          <span>PRT Live</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Context</a></li>
+          <li><a href="solution.html">Solution</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section" id="team">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <h2>Team Collaboration</h2>
+          </div>
+          <div class="grid-2">
+            <!-- Team member list — edit names and roles here -->
+            <article class="team-card glass" data-aos="fade-right">
+              <h3>Team Roles</h3>
+              <ul>
+                <li><strong>Patrick Harvey:</strong> problem framing, stakeholder research, interview lead, UI mockups</li>
+                <li><strong>Aidan Plummer:</strong> strategic analysis, value chain mapping, peer comparison</li>
+                <li><strong>Helen Zhang:</strong> social theory, solution design, website build</li>
+              </ul>
+            </article>
+            <!-- Collaboration evidence — edit description and link here -->
+            <article class="team-card glass" data-aos="fade-left">
+              <h3>Collaboration Evidence</h3>
+              <p>We met twice a week, shared drafts as we went, and kept a running folder with interview notes, design artifacts, and evolving write-ups.</p>
+              <a href="https://drive.google.com/drive/u/0/folders/1MrbEgUwBV2vmfrp9yy3zttCk0GdfE_nJ" class="inline-link" target="_blank" rel="noopener noreferrer">Team Collaboration Folder <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="year"></span> PRT Live · People Project</p>
+        <a href="#top" class="inline-link">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
