@@ -40,14 +40,12 @@
         <div class="container">
           <div class="section-head" data-aos="fade-up">
             <h2>Our Solution</h2>
-            <p>GPS-first architecture that keeps riders informed when things go wrong.</p>
             <p>
-              Right now, PRT's system trusts scheduled data first and patches in GPS as a secondary check. PRT Live flips that. Vehicle position is the source of truth. When a bus goes off-route, it stays on the map with a clear status.
+              Right now, PRT's system trusts scheduled data first and patches in GPS as a secondary check. PRT Live solves this by using vehicle location as the source of truth. So, when a bus goes off-route, it stays on the map with a clear status.
             </p>
           </div>
           <div class="solution-demo glass" data-aos="zoom-in-up">
             <div class="demo-header">
-              <p class="eyebrow">Solution Poster</p>
               <h3>PRT Live concept overview</h3>
               <p>Click the poster or the button below to view it full size.</p>
             </div>
@@ -76,15 +74,15 @@
           <div class="grid-3 cards">
             <article class="pillar-card glass" data-aos="fade-up">
               <h3>Automated Trip Association</h3>
-              <p>Automatically match buses to their scheduled runs using vehicle ID, time, block assignment, and GPS position with no manual login required.</p>
+              <p>Automatically match buses to their scheduled runs using vehicle ID, time, block assignment, and GPS position so that no manual login by drivers is required.</p>
               <ul>
-                <li>Removes the head-sign failure mode</li>
-                <li>Reduces gaps during trip transitions</li>
+                <li>Removes the head-sign failure mode where drivers just set the head sign and never log in, leaving the bus completely off the map.</li>
+                <li>Eliminates those short, confusing periods where a bus vanishes from the tracker between consecutive trips.</li>
               </ul>
             </article>
             <article class="pillar-card glass" data-aos="fade-up" data-aos-delay="90">
               <h3>Automatic Off-Route Detection</h3>
-              <p>When a bus goes off-route, flag it, keep it on the map, pause the ETA until things are clear, and alert the team automatically.</p>
+              <p>When a bus goes off-route, flag it, keep it on the map, pause the ETA until things are clear, and alert PRT's disruption management team and dispatchers automatically.</p>
               <ul>
                 <li>Stops map disappearances</li>
                 <li>Turns a reactive process proactive</li>
@@ -111,21 +109,21 @@
           <div class="grid-2 compare-grid">
             <article class="compare-card glass" data-aos="fade-right">
               <h3>Current State</h3>
-              <ul>
-                <li>Schedule-first logic can mask real-world drift</li>
+              <ol>
+                <li>Sticking to a schedule manually controlled by drivers can where a bus really is</li>
                 <li>Unexpected detours can drop buses from public tracking</li>
                 <li>Riders can't tell if a bus is late, gone, or just unconfirmed</li>
-                <li>Detour visibility varies by platform and pay tier</li>
-              </ul>
+                <li>Detour visibility varies by platform and pay tier, so key information is hidden from riders who cannot afford a paid subscription</li>
+              </ol>
             </article>
             <article class="compare-card live glass" data-aos="fade-left">
               <h3>PRT Live State</h3>
-              <ul>
+              <ol>
                 <li>GPS-first tracking keeps the map grounded in reality</li>
                 <li>Off-route buses stay visible with clear status tags</li>
-                <li>Confidence states communicate uncertainty honestly</li>
-                <li>Better detour feeds mean fairer access across all apps</li>
-              </ul>
+                <li>Confidence states communicate uncertainty to riders</li>
+                <li>Better detour feeds mean fairer access across all apps since riders no longer need a paid subscription to see detour information</li>
+              </ol>
             </article>
           </div>
         </div>
@@ -140,15 +138,15 @@
           <div class="grid-3 cards">
             <article class="stat-card glass" data-aos="zoom-in">
               <h3>Business Value</h3>
-              <p>Lower complaint volume and clearer reliability data give the agency better tools for internal decision-making.</p>
+              <p>Cleaner data and fewer complaints help PRT see real problems and fix them with confidence.</p>
             </article>
             <article class="stat-card glass" data-aos="zoom-in" data-aos-delay="90">
               <h3>Value Chain Fit</h3>
-              <p>Targets the exact failure points: inbound data linking, detour handling during operations, and outbound rider communication.</p>
+              <p>Targets the exact current failure points of inbound data linking, detour handling during operations, and outbound rider communication.</p>
             </article>
             <article class="stat-card glass" data-aos="zoom-in" data-aos-delay="180">
-              <h3>Capital-Light Feasibility</h3>
-              <p>Uses the existing Clever Devices and HASTUS stack. No new hardware — just better integration and workflow design.</p>
+              <h3>Low Cost Feasibility</h3>
+              <p>Uses the existing software stack of Clever Devices and HASTUS stack, so No new hardware will be involved, just better integration and workflow design.</p>
             </article>
           </div>
         </div>
@@ -157,21 +155,21 @@
       <section class="section" id="theory">
         <div class="container">
           <div class="section-head" data-aos="fade-up">
-            <h2>Social Theory</h2>
+            <h2>Social Theories Behind PRT Live</h2>
           </div>
           <!-- Social theory cards — edit title and description for each theory here -->
           <div class="grid-3 cards">
             <article class="theory-card glass" data-aos="fade-up">
               <h3>Sociotechnical Systems Theory</h3>
-              <p>You can't just fix the software — the people and processes around it need to work together too. PRT Live redesigns the handoffs, not just the code.</p>
+              <p>You can't just fix the software, the people and processes around it need to work together too. PRT Live redesigns those processes and not just the code.</p>
             </article>
             <article class="theory-card glass" data-aos="fade-up" data-aos-delay="100">
               <h3>Technology Acceptance Model</h3>
-              <p>People use tools they trust. Showing honest ETAs — even uncertain ones — builds more credibility than silently hiding the problem.</p>
+              <p>People use tools they trust, so showing honest ETAs (even if they are uncertain ones) builds more credibility than silently hiding the problem.</p>
             </article>
             <article class="theory-card glass" data-aos="fade-up" data-aos-delay="200">
               <h3>Affordance Theory</h3>
-              <p>When riders know what's actually happening, they can act on it — wait, reroute, or switch modes. Ambiguity just causes frustration.</p>
+              <p>When riders know what's actually happening, they can act on it by waiting, rerouting, or switching modes. The current ambiguity just causes frustration.</p>
             </article>
           </div>
         </div>
@@ -186,7 +184,7 @@
           <div class="grid-3 cards">
             <article class="impact-card glass" data-aos="fade-up">
               <h3>Organizational</h3>
-              <p>Better reliability data and fewer complaint tickets — because riders will actually know what's going on.</p>
+              <p>With better reliability data, complaint tickets become fewer and more streamlined. Riders will understand what's happening, and because the app is run by PRT (not third parties), complaints go directly to the agency.</p>
             </article>
             <article class="impact-card glass" data-aos="fade-up" data-aos-delay="100">
               <h3>Societal</h3>
