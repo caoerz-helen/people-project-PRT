@@ -47,6 +47,7 @@ window.addEventListener("load", () => {
 
 const lights = document.querySelectorAll(".bg-light");
 const routeGrid = document.querySelector(".route-grid");
+
 window.addEventListener("mousemove", (event) => {
   if (prefersReducedMotion) return;
   const x = (event.clientX / window.innerWidth - 0.5) * 14;
@@ -68,3 +69,25 @@ window.addEventListener("scroll", () => {
   const offset = window.scrollY * 0.045;
   routeGrid.style.backgroundPosition = `0 ${offset}px, 0 ${offset}px, 0 0`;
 });
+
+// Poster lightbox
+const lightboxOverlay = document.getElementById("poster-lightbox");
+const lightboxClose = document.querySelector(".lightbox-close");
+
+if (lightboxOverlay) {
+  document.querySelectorAll(".poster-lightbox-trigger").forEach((trigger) => {
+    trigger.addEventListener("click", () => lightboxOverlay.classList.add("is-open"));
+  });
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener("click", () => lightboxOverlay.classList.remove("is-open"));
+  }
+
+  lightboxOverlay.addEventListener("click", (e) => {
+    if (e.target === lightboxOverlay) lightboxOverlay.classList.remove("is-open");
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") lightboxOverlay.classList.remove("is-open");
+  });
+}

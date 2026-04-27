@@ -3,23 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PRT Live | Rebuilding Rider Trust</title>
-    <meta
-      name="description"
-      content="PRT Live is a people-centered information systems proposal to rebuild rider trust in Pittsburgh Regional Transit."
-    />
+    <title>PRT Live | Problem &amp; Context</title>
+    <meta name="description" content="PRT Live is a people-centered information systems proposal to rebuild rider trust in Pittsburgh Regional Transit." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -31,7 +20,7 @@
 
     <header class="site-header" id="top">
       <nav class="navbar container">
-        <a href="#top" class="brand">
+        <a href="index.html" class="brand">
           <span class="brand-dot"></span>
           <span>PRT Live</span>
         </a>
@@ -39,14 +28,9 @@
           <i class="fa-solid fa-bars"></i>
         </button>
         <ul class="nav-links">
-          <li><a href="#problem">Context</a></li>
-          <li><a href="#system">System</a></li>
-          <li><a href="#solution">Solution</a></li>
-          <li><a href="#solution-demo">Demo</a></li>
-          <li><a href="#pillars">Pillars</a></li>
-          <li><a href="#comparison">Experience</a></li>
-          <li><a href="#impact">Impact</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="index.html">Context</a></li>
+          <li><a href="solution.html">Solution</a></li>
+          <li><a href="team.html">Team</a></li>
         </ul>
       </nav>
     </header>
@@ -59,18 +43,10 @@
             <h1>PRT Live</h1>
             <p class="hero-subtitle">Rebuilding rider trust in Pittsburgh Regional Transit</p>
             <p class="hero-sub">
-              PRT already has GPS hardware, network infrastructure, and an existing tracking stack. PRT Live focuses
-              on the trust gap: when schedule logic and street reality diverge, riders lose visibility exactly when
-              they need it most.
+              PRT already has the GPS hardware and network infrastructure it needs. The problem is what happens when things go off-script — buses go off-route, tracking breaks down, and riders are left with nothing. PRT Live is built to close that gap.
             </p>
             <div class="hero-cta">
-              <a href="#solution" class="btn btn-primary">Explore The Solution</a>
-              <a href="#solution-demo" class="btn btn-ghost">View Figma prototype</a>
-            </div>
-            <div class="mini-stats">
-              <article><h3>66%</h3><p>on-time performance</p></article>
-              <article><h3>75%</h3><p>PRT target</p></article>
-              <article><h3>33.3M</h3><p>annual rides served</p></article>
+              <a href="solution.html" class="btn btn-primary">See Our Solution</a>
             </div>
           </div>
           <div class="hero-visual glass" data-aos="zoom-in">
@@ -85,78 +61,54 @@
 
       <section class="section" id="problem">
         <div class="container">
-          <!-- SOURCE: research/PRT FINAL DOCUMENT.pdf (Problem Identification and Context) -->
           <div class="section-head" data-aos="fade-up">
-            <p class="eyebrow">Problem · Opportunity · Context</p>
-            <h2>The core issue is not missing technology. It is a broken sociotechnical experience.</h2>
-            <p>
-              Research shows a repeating pattern: buses can be physically tracked, but riders still see disappearances,
-              unclear ETAs, and silent failures. That trust collapse pushes riders toward cars and ride-share, tightening
-              budget pressure on a system they depend on.
-            </p>
+            <h2>The Problem</h2>
           </div>
+          <!-- Problem cards — edit titles and descriptions here -->
           <div class="grid-3 cards">
             <article class="card glass" data-aos="fade-up" data-aos-delay="50">
               <i class="fa-solid fa-map-location-dot card-icon"></i>
               <h3>Ghost Bus Experience</h3>
-              <p>Observed arrivals can vanish from public tools when buses go off-route or are not properly linked.</p>
+              <p>Buses that are physically running can disappear from apps when they go off-route or lose their trip association.</p>
             </article>
             <article class="card glass" data-aos="fade-up" data-aos-delay="120">
               <i class="fa-solid fa-triangle-exclamation card-icon"></i>
               <h3>Silent Failure States</h3>
-              <p>Riders cannot tell whether a bus is delayed, canceled, or simply unconfirmed by the system.</p>
+              <p>There's no way to tell if a bus is running late, actually gone, or just dropped off the tracking system.</p>
             </article>
             <article class="card glass" data-aos="fade-up" data-aos-delay="190">
               <i class="fa-solid fa-scale-balanced card-icon"></i>
               <h3>Equity Pressure</h3>
-              <p>Transit-dependent riders are disproportionately harmed when service information is unreliable.</p>
+              <p>People who rely on transit the most are hit hardest when the information is unreliable. That's not a small design detail.</p>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="stakeholders">
-        <div class="container">
-          <!-- SOURCE: research/PRT FINAL DOCUMENT.pdf (Stakeholders) -->
-          <div class="section-head" data-aos="fade-up">
-            <p class="eyebrow">Stakeholders</p>
-            <h2>Multiple groups are affected by one shared reliability layer.</h2>
-          </div>
-          <div class="grid-4 cards">
-            <article class="feature-card glass" data-aos="fade-up"><h3>Primary Riders</h3><p>Daily commuters, students, occasional riders, and transit-dependent residents.</p></article>
-            <article class="feature-card glass" data-aos="fade-up" data-aos-delay="70"><h3>Operations Staff</h3><p>Operators, dispatchers, and disruption teams who shape what reaches public feeds.</p></article>
-            <article class="feature-card glass" data-aos="fade-up" data-aos-delay="140"><h3>Platform Partners</h3><p>Clever Devices, Transit, and other third-party apps consuming PRT data.</p></article>
-            <article class="feature-card glass" data-aos="fade-up" data-aos-delay="210"><h3>Public Institutions</h3><p>PRT leadership, state funding stakeholders, and the broader Pittsburgh region.</p></article>
           </div>
         </div>
       </section>
 
       <section class="section gradient-section" id="system">
         <div class="container">
-          <!-- SOURCE: research/PRT FINAL DOCUMENT.pdf + research/Scott Vetere Talk.rtf -->
           <div class="section-head" data-aos="fade-up">
-            <p class="eyebrow">Current System Breakdown</p>
-            <h2>Where the chain fails today</h2>
+            <h2>Where things break down</h2>
             <p>
-              PRT's stack includes IVN GPS, BusTime prediction logic, GTFS-RT feeds, and app interfaces. The breakdown
-              occurs at three points: route association, detour handling, and uneven information distribution.
+              PRT already has GPS hardware, BusTime predictions, GTFS-RT feeds, and app integrations. The chain breaks down in three specific spots.
             </p>
           </div>
+          <!-- Timeline items — edit step titles and descriptions here -->
           <div class="timeline">
             <article class="timeline-item" data-aos="fade-right">
               <span>01</span>
               <h3>Trip Association Gaps</h3>
-              <p>Different operator login methods create different data quality, including partial or non-public traces.</p>
+              <p>Different operator login methods create different data quality, including partial or non-public vehicle traces.</p>
             </article>
             <article class="timeline-item" data-aos="fade-right" data-aos-delay="80">
               <span>02</span>
               <h3>Off-Route Dropouts</h3>
-              <p>Unexpected detours can remove buses from public view until manual detour entry catches up.</p>
+              <p>Unexpected detours can pull buses out of public view until a dispatcher manually enters the detour in the system.</p>
             </article>
             <article class="timeline-item" data-aos="fade-right" data-aos-delay="160">
               <span>03</span>
               <h3>Fragmented Rider Visibility</h3>
-              <p>Detour data availability differs across first-party and third-party app experiences.</p>
+              <p>Detour information shows up differently depending on whether you're using the PRT app or a third-party app.</p>
             </article>
           </div>
 
@@ -177,235 +129,31 @@
         </div>
       </section>
 
-      <section class="section" id="solution">
+      <section class="section" id="stakeholders">
         <div class="container">
-          <!-- SOURCE: research/PRT FINAL DOCUMENT.pdf (Information Systems Solution: PRT Live) -->
           <div class="section-head" data-aos="fade-up">
-            <p class="eyebrow">Our Solution</p>
-            <h2>PRT Live: GPS-first architecture for transparent, actionable transit information.</h2>
-            <p>
-              PRT Live flips the logic: real-time vehicle position is the source of truth, and schedules become the
-              plan that reality is compared against. When uncertainty appears, the system communicates it clearly.
-            </p>
+            <h2>Stakeholders</h2>
+            <p>A lot of different people depend on getting this right.</p>
           </div>
-          <div class="solution-demo glass" id="solution-demo" data-aos="zoom-in-up">
-            <div class="demo-header">
-              <p class="eyebrow">Solution poster</p>
-              <h3>PRT Live concept showcase</h3>
-              <p>
-                The poster summarizes the three-pillar system redesign and the rider-facing improvements at the core
-                of PRT Live.
-              </p>
-            </div>
-            <div class="prototype-showcase">
-              <div class="prototype-preview-frame">
-                <img
-                  src="assets/reference/Poster.png"
-                  alt="PRT Live poster"
-                  class="prototype-preview-image"
-                />
-              </div>
-              <div class="prototype-preview-meta">
-              </div>
-            </div>
-
-            <div class="hero-cta demo-cta-wrap">
-              <!-- EDIT: Replace FIGMA_PROTOTYPE_URL below if the prototype link changes -->
-              <a
-                href="https://www.figma.com/proto/nD7aht7OSCdD9T7HpLVO9k/IS-People-Project-WireFrames?node-id=19-2102&amp;t=i6NEcGAznNs1upNa-1"
-                class="btn btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Open Interactive Prototype</a
-              >
-            </div>
-            <p class="prototype-action-note">Best viewed in Figma using 'Fit width.'</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="pillars">
-        <div class="container">
-          <!-- SOURCE: research/PRT FINAL DOCUMENT.pdf (Three Pillars) -->
-          <div class="section-head" data-aos="fade-up">
-            <p class="eyebrow">Three Pillars of PRT Live</p>
-            <h2>One framework, three high-leverage system upgrades.</h2>
-          </div>
-          <div class="grid-3 cards">
-            <article class="pillar-card glass" data-aos="fade-up">
-              <h3>Automated Trip Association</h3>
-              <p>Match buses to scheduled runs automatically using vehicle ID, time, block assignment, and GPS.</p>
-              <ul><li>Removes head-sign failure mode</li><li>Reduces trip transition gaps</li></ul>
+          <!-- Stakeholder cards — edit names and descriptions here -->
+          <div class="grid-4 cards">
+            <article class="feature-card glass" data-aos="fade-up">
+              <h3>Primary Riders</h3>
+              <p>Daily commuters, students, occasional riders, and transit-dependent residents.</p>
             </article>
-            <article class="pillar-card glass" data-aos="fade-up" data-aos-delay="90">
-              <h3>Automatic Off-Route Detection</h3>
-              <p>Flag off-route buses, keep them visible, pause unreliable ETAs, and alert disruption teams instantly.</p>
-              <ul><li>Stops map disappearances</li><li>Turns reactive process proactive</li></ul>
+            <article class="feature-card glass" data-aos="fade-up" data-aos-delay="70">
+              <h3>Operations Staff</h3>
+              <p>Operators, dispatchers, and disruption teams who shape what reaches public feeds.</p>
             </article>
-            <article class="pillar-card glass" data-aos="fade-up" data-aos-delay="180">
-              <h3>Transparent Communication Layer</h3>
-              <p>Use confidence-tagged ETAs and active detour banners across first-party and third-party channels.</p>
-              <ul><li>Improves rider decision quality</li><li>Democratizes detour visibility</li></ul>
+            <article class="feature-card glass" data-aos="fade-up" data-aos-delay="140">
+              <h3>Platform Partners</h3>
+              <p>Clever Devices, Transit, and other third-party apps consuming PRT data.</p>
+            </article>
+            <article class="feature-card glass" data-aos="fade-up" data-aos-delay="210">
+              <h3>Public Institutions</h3>
+              <p>PRT leadership, state funding stakeholders, and the broader Pittsburgh region.</p>
             </article>
           </div>
-        </div>
-      </section>
-
-      <section class="section gradient-section" id="comparison">
-        <div class="container">
-          <!-- SOURCE: research/PRT FINAL DOCUMENT.pdf (Current system vs PRT Live behavior) -->
-          <div class="section-head" data-aos="fade-up">
-            <p class="eyebrow">Current Experience vs. PRT Live</p>
-            <h2>From uncertainty and silence to clarity and action.</h2>
-          </div>
-          <div class="grid-2 compare-grid">
-            <article class="compare-card glass" data-aos="fade-right">
-              <h3>Current State</h3>
-              <ul>
-                <li>Schedule-first logic can mask real-world drift</li>
-                <li>Unexpected detours can drop buses from public tracking</li>
-                <li>Riders cannot distinguish late vs. unconfirmed states</li>
-                <li>Detour visibility varies by platform and pay tier</li>
-              </ul>
-            </article>
-            <article class="compare-card live glass" data-aos="fade-left">
-              <h3>PRT Live State</h3>
-              <ul>
-                <li>GPS-first tracking keeps map reality grounded</li>
-                <li>Off-route buses stay visible with clear status tags</li>
-                <li>Confidence states communicate uncertainty honestly</li>
-                <li>Improved detour feeds support fairer ecosystem access</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="strategy">
-        <div class="container">
-          <!-- SOURCE: research/PRT FINAL DOCUMENT.pdf + research/PRT Background Research - Current Capabilities.docx -->
-          <div class="section-head" data-aos="fade-up">
-            <p class="eyebrow">Strategic Analysis</p>
-            <h2>Trust is the competitive metric.</h2>
-            <p>
-              For a public agency, competition is behavioral: riders can choose a bus, a car, a ride-share, or no trip.
-              Each ghost-bus event is a small trust loss with system-level consequences.
-            </p>
-          </div>
-          <div class="grid-3 cards">
-            <article class="stat-card glass" data-aos="zoom-in">
-              <h3>Business Value</h3>
-              <p>Lower complaint burden and clearer reliability evidence for organizational decision-making.</p>
-            </article>
-            <article class="stat-card glass" data-aos="zoom-in" data-aos-delay="90">
-              <h3>Value Chain Fit</h3>
-              <p>Targets failures in inbound data linking, operations detour handling, and outbound rider communication.</p>
-            </article>
-            <article class="stat-card glass" data-aos="zoom-in" data-aos-delay="180">
-              <h3>Capital-Light Feasibility</h3>
-              <p>Uses existing Clever Devices + HASTUS stack; focuses on integration and workflow redesign, not new hardware.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="theory">
-        <div class="container">
-          <!-- SOURCE: research/PRT FINAL DOCUMENT.pdf (Social Theory Application) -->
-          <div class="section-head" data-aos="fade-up">
-            <p class="eyebrow">Social Theory</p>
-            <h2>Why this redesign matters beyond software.</h2>
-          </div>
-          <div class="grid-3 cards">
-            <article class="theory-card glass" data-aos="fade-up">
-              <h3>Sociotechnical Systems Theory</h3>
-              <p>Performance depends on alignment between technical infrastructure and social workflow. PRT Live removes fragile handoffs.</p>
-            </article>
-            <article class="theory-card glass" data-aos="fade-up" data-aos-delay="100">
-              <h3>Technology Acceptance Model</h3>
-              <p>Adoption improves when riders perceive reliability and ease of use. Honest confidence states strengthen long-term trust.</p>
-            </article>
-            <article class="theory-card glass" data-aos="fade-up" data-aos-delay="200">
-              <h3>Affordance Theory</h3>
-              <p>Clear status labels create actionable choices: wait, reroute, or switch modes with informed confidence.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section gradient-section" id="impact">
-        <div class="container">
-          <!-- SOURCE: research/PRT FINAL DOCUMENT.pdf (Expected Impact + Risks) -->
-          <div class="section-head" data-aos="fade-up">
-            <p class="eyebrow">Expected Impact</p>
-            <h2>Organizational accountability and rider trust can rise together.</h2>
-          </div>
-          <div class="grid-3 cards">
-            <article class="impact-card glass" data-aos="fade-up">
-              <h3>Organizational</h3>
-              <p>More measurable reliability telemetry and fewer support requests caused by invisible buses.</p>
-            </article>
-            <article class="impact-card glass" data-aos="fade-up" data-aos-delay="100">
-              <h3>Societal</h3>
-              <p>Better outcomes for riders with fewer alternatives and more reliable day-to-day mobility information.</p>
-            </article>
-            <article class="impact-card glass" data-aos="fade-up" data-aos-delay="200">
-              <h3>Risks & Trade-offs</h3>
-              <p>Algorithm aversion, labor concerns, and platform-partner shifts require careful rollout and governance.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="team">
-        <div class="container">
-          <!-- SOURCE: research/PRT FINAL DOCUMENT.pdf (Team Collaboration Process) -->
-          <div class="section-head" data-aos="fade-up">
-            <p class="eyebrow">Team Collaboration</p>
-            <h2>Cross-functional research, strategy, design, and implementation.</h2>
-          </div>
-          <div class="grid-2 team-layout">
-            <article class="team-card glass" data-aos="fade-right">
-              <h3>Team Roles</h3>
-              <!-- EDIT: Replace names/roles if needed -->
-              <ul>
-                <li><strong>Patrick Harvey:</strong> problem framing, stakeholder research, interview lead, UI mockups</li>
-                <li><strong>Aidan Plummer:</strong> strategic analysis, value chain mapping, peer comparison</li>
-                <li><strong>Helen Zhang:</strong> social theory, solution design, website build</li>
-              </ul>
-            </article>
-            <article class="team-card glass" data-aos="fade-left">
-              <h3>Collaboration Evidence</h3>
-              <p>Twice-weekly integration rhythm with shared drafts, transcript synthesis, and evolving design artifacts.</p>
-              <a href="https://drive.google.com/drive/folders/13SFIVW32sckbjUbUleATRhRKaNTnTc-d?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto" class="inline-link" target="_blank" rel="noopener noreferrer">Team Collaboration Folder <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section cta-section" id="final-cta">
-        <div class="container cta-box glass" data-aos="zoom-in-up">
-          <p class="eyebrow">Final CTA</p>
-          <h2>Bring transparent transit reliability to every rider touchpoint.</h2>
-          <p>
-            PRT Live is designed to work within real funding and infrastructure constraints while creating visible
-            trust gains in daily rider decisions.
-          </p>
-          <div class="hero-cta">
-            <!-- EDIT: Scroll CTAs target #solution-demo (Figma). Change href if the demo anchor moves. -->
-            <a href="#solution-demo" class="btn btn-primary">View Poster</a>
-            <a href="#solution-demo" class="btn btn-ghost">See Demo</a>
-            <!-- EDIT: Proposal PDF path — file: research/PRT FINAL DOCUMENT.pdf -->
-            <a
-              href="research/PRT%20FINAL%20DOCUMENT.pdf"
-              class="btn btn-ghost"
-              target="_blank"
-              rel="noopener noreferrer"
-              >View Full Proposal</a
-            >
-          </div>
-          <!-- EDIT: Replace src with your QR image path -->
-          <img class="qr-placeholder" src="assets/reference/Proposal.png" alt="QR placeholder for poster/prototype link" />
         </div>
       </section>
     </main>
@@ -413,7 +161,6 @@
     <footer class="site-footer">
       <div class="container footer-content">
         <p>&copy; <span id="year"></span> PRT Live · People Project</p>
-        <!-- EDIT: Add final public link if needed -->
         <a href="#top" class="inline-link">Back to top <i class="fa-solid fa-arrow-up"></i></a>
       </div>
     </footer>
